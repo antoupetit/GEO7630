@@ -1,0 +1,382 @@
+<mxfile host="app.diagrams.net" modified="2024-03-06T02:58:16.569Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="iwj2-NXQivZvwi4xN3gQ" version="24.0.2" type="device" pages="2">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dFOwev1eujSAVKNDPgNY-2" value="Importation réseau cyclable" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="90" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dFOwev1eujSAVKNDPgNY-3" value="-Reprojeter 3857" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="dFOwev1eujSAVKNDPgNY-2" vertex="1">
+          <mxGeometry y="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dFOwev1eujSAVKNDPgNY-4" value="-Renommer attributs selon nomenclature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="dFOwev1eujSAVKNDPgNY-2" vertex="1">
+          <mxGeometry y="60" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dFOwev1eujSAVKNDPgNY-5" value="-Tailler les tronçons de ligne en segment &amp;lt;75m" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="dFOwev1eujSAVKNDPgNY-2" vertex="1">
+          <mxGeometry y="90" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-3" value="Attribution d&#39;indices en fonction de 4 champs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="110" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-4" value="-AttributeManager et des énoncés conditionnels" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-3" vertex="1">
+          <mxGeometry y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="dFOwev1eujSAVKNDPgNY-4" target="NbWAhhoIf5kSXp0VOlrg-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-8" value="Calcul de la Pente" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="100" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-9" value="-Extraction des coordonnées des extrémités des segments de lignes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-8" vertex="1">
+          <mxGeometry y="30" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-10" value="-Création de fichiers de points à partir des coordonnées sorties" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-8" vertex="1">
+          <mxGeometry y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-11" value="-Extraction des valeurs d&#39;élévation du MNT sur les points" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-8" vertex="1">
+          <mxGeometry y="100" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-18" value="-Calcul de la pente en % à partir de la différence d&#39;élévation et" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-8" vertex="1">
+          <mxGeometry y="140" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-12" value="Importation MNT" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-13" value="Reprojeter 3857" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-12" vertex="1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-4" target="NbWAhhoIf5kSXp0VOlrg-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-17" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.465;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.498;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-13" target="NbWAhhoIf5kSXp0VOlrg-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="80" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-19" value="Importation fichier îlots de chaleur" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="310" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-20" value="-Reprojeter 3857" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-19" vertex="1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-21" value="-Renommer les attributs selon la nomenclature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-19" vertex="1">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-22" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-19" vertex="1">
+          <mxGeometry y="90" width="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-23" value="Attribution d&#39;indices en fonction de 4 champs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="325" y="310" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-24" value="-AttributeManager et des énoncés conditionnels" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-23" vertex="1">
+          <mxGeometry y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-20" target="NbWAhhoIf5kSXp0VOlrg-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-97" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-26" target="NbWAhhoIf5kSXp0VOlrg-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-26" value="Jointure spatiale" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="320" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-27" value="-Attribution des indices de chaleur aux fichiers de pistes cyclables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-26" vertex="1">
+          <mxGeometry y="30" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-24" target="NbWAhhoIf5kSXp0VOlrg-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="558.6000000000001" y="401.53" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.464;exitY=1.08;exitDx=0;exitDy=0;entryX=0.586;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-18" target="NbWAhhoIf5kSXp0VOlrg-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-102" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-33" target="NbWAhhoIf5kSXp0VOlrg-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-33" value="Importation fichier espaces verts" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="470" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-61" value="-Reprojeter 3857" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-33" vertex="1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-34" value="-Renommer les attributs selon la nomenclature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-33" vertex="1">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-37" value="Création zones buffer et attribution indices" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="420" width="320" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-38" value="-Création de 3 buffers à distances différentes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-37" vertex="1">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-39" value="-Clip des buffers de niveaux supérieurs par les buffers de niveau inférieur afin d&#39;obtenir des buffer en anneaux" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-37" vertex="1">
+          <mxGeometry y="60" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-40" value="-AreaOnAreaOverlayer pour enlever les duplicats&lt;br&gt;&lt;br&gt;-Attribution d&#39;indice de proximité d&#39;espace vert pour chaque buffer&lt;br&gt;&lt;br&gt;-Union des 3 buffers" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-37" vertex="1">
+          <mxGeometry y="110" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-98" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-41" target="NbWAhhoIf5kSXp0VOlrg-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-41" value="Jointure spatiale" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="470" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-42" value="-Attribution des indices d&#39;espace verts aux fichiers de pistes cyclables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-41" vertex="1">
+          <mxGeometry y="30" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-118" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-45" target="NbWAhhoIf5kSXp0VOlrg-115" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-45" value="Importation fichier des routes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="660" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-62" value="-Reprojeter 3857" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-45" vertex="1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-46" value="-Renommer les attributs selon la nomenclature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-45" vertex="1">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-99" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-53" target="NbWAhhoIf5kSXp0VOlrg-85" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-53" value="Jointure spatiale" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="660" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-54" value="-Attribution des indices de proximité des routes principales aux fichiers de pistes cyclables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-53" vertex="1">
+          <mxGeometry y="30" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-107" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-57" target="NbWAhhoIf5kSXp0VOlrg-70" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-109" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-63" target="NbWAhhoIf5kSXp0VOlrg-75" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="1190" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-57" value="Importation et jointure des 2 fichiers de travaux" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="1020" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-63" value="-Reprojeter 3857" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-57" vertex="1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-58" value="-Renommer les attributs selon la nomenclature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-57" vertex="1">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-64" value="Importation collisions routières" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="1360" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-68" value="-Reprojeter 3857" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-64" vertex="1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-65" value="-Renommer les attributs selon la nomenclature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-64" vertex="1">
+          <mxGeometry y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-110" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-69" target="NbWAhhoIf5kSXp0VOlrg-86" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-69" value="Calcul d&#39;indice obstruction circulation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="920" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-70" value="-Filtre et union des résultats pour garder uniquement les travaux causant des barrage ou des obstructions de voies" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-69" vertex="1">
+          <mxGeometry y="30" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-71" value="-Calcul d&#39;indice d&#39;obstruction de voies" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-69" vertex="1">
+          <mxGeometry y="70" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-72" value="-Buffer 30m pour jointure spatiale subséquente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-69" vertex="1">
+          <mxGeometry y="100" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-73" value="Calcul d&#39;indice d&#39;inconfort lié aux travaux" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="1160" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-74" value="-Ajout d&#39;indice en fonction de la présence de travaux" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-73" vertex="1">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-75" value="-Buffer 30m pour jointure spatiale subséquente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-73" vertex="1">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-81" value="Calcul de 3 indices liés aux collisions routières" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="1360" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-82" value="-Ajout d&#39;un indice basé sur la gravité des accidents" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-81" vertex="1">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-83" value="-Ajout d&#39;un indice basé sur le nombre de morts ou de blessés" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-81" vertex="1">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-84" value="-Ajout d&#39;un indice en fonction de l&#39;implication d&#39;un ou plusieurs vélo d&#39;un accident" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-81" vertex="1">
+          <mxGeometry y="90" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-100" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-85" target="NbWAhhoIf5kSXp0VOlrg-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-85" value="Jointure spatiale" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="920" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-86" value="-Attribution des valeurs d&#39;indice d&#39;obstruction de la circulation aux fichiers de pistes cyclables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-85" vertex="1">
+          <mxGeometry y="30" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-89" value="NeighborFinder" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="1360" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-90" value="-Attribution des valeurs des 3 indices liés aux collisions routières aux fichiers de pistes cyclables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-89" vertex="1">
+          <mxGeometry y="30" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-101" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-93" target="NbWAhhoIf5kSXp0VOlrg-89" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-93" value="Jointure spatiale" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="1200" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-94" value="-Attribution des valeurs d&#39;indice de présence de travaux aux fichiers de pistes cyclables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-93" vertex="1">
+          <mxGeometry y="30" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-103" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.17;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-37" target="NbWAhhoIf5kSXp0VOlrg-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-112" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-65" target="NbWAhhoIf5kSXp0VOlrg-82" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="1445" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-113" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-83" target="NbWAhhoIf5kSXp0VOlrg-90" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-114" value="Création zones buffer et attribution indices" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="650" width="320" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-115" value="-Filtre pour sélectionner les autoroutes uniquement" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-114" vertex="1">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-121" value="-Création de 3 buffers à distances différentes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-114" vertex="1">
+          <mxGeometry y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-116" value="-Clip des buffers de niveaux supérieurs par les buffers de niveau inférieur afin d&#39;obtenir des buffer en anneaux" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-114" vertex="1">
+          <mxGeometry y="90" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-117" value="-AreaOnAreaOverlayer pour enlever les duplicats&lt;br&gt;&lt;br&gt;-Attribution d&#39;indice de proximité des autoroutes pour chaque buffer&lt;br&gt;&lt;br&gt;-Union des 3 buffers" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-114" vertex="1">
+          <mxGeometry y="140" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-119" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.137;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-115" target="NbWAhhoIf5kSXp0VOlrg-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-123" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-75" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="1265.666666666667" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-124" value="Calcul d&#39;indice total de convivialité des voies cyclables" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="615" y="1530" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-125" value="-Somme des 14 indices présents dans le fichier de pistes cyclables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="NbWAhhoIf5kSXp0VOlrg-124" vertex="1">
+          <mxGeometry y="40" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-128" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.446;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NbWAhhoIf5kSXp0VOlrg-89" target="NbWAhhoIf5kSXp0VOlrg-124" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbWAhhoIf5kSXp0VOlrg-129" value="Fichier en sortie:&lt;br&gt;-Pistes cyclables avec indice total&lt;br&gt;-Symbologie continue de couleurs appliquée au lignes du fichier en fonction de l&#39;indice total spécifique de chaque tronçon de piste cyclable&amp;nbsp;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="60" y="2320" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-2" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KZl1es5whjhRjGiQXw2g-7" target="KZl1es5whjhRjGiQXw2g-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="658" y="1610" as="sourcePoint" />
+            <mxPoint x="385" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-3" value="Validation des données" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1720" width="210" height="110" as="geometry">
+            <mxRectangle x="290" y="1640" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-6" value="- Recherche des noms de parcs pour combler les données de rues manquantes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="KZl1es5whjhRjGiQXw2g-3">
+          <mxGeometry y="40" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-9" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NbWAhhoIf5kSXp0VOlrg-124" target="KZl1es5whjhRjGiQXw2g-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="615" y="1606" as="sourcePoint" />
+            <mxPoint x="365" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-7" value="Attribution de noms de rues pour représentation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1535" width="210" height="110" as="geometry">
+            <mxRectangle x="290" y="1640" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-8" value="- Généralisation des tronçons de rue par le nom de rue qu&#39;ils représentent" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="KZl1es5whjhRjGiQXw2g-7">
+          <mxGeometry y="40" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-10" value="Calcul des ratios entre la longueur des tronçons et le score d&#39;agréabilité" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1970" width="210" height="110" as="geometry">
+            <mxRectangle x="290" y="1640" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-11" value="- Calcul des statistiques d&#39;indices en fonction de la rue&lt;div&gt;- Ratio entre la longueur des rues et l&#39;indice total&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="KZl1es5whjhRjGiQXw2g-10">
+          <mxGeometry y="40" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.505;exitY=0.986;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KZl1es5whjhRjGiQXw2g-6" target="KZl1es5whjhRjGiQXw2g-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="1730" as="sourcePoint" />
+            <mxPoint x="450" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.51;exitY=1.043;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KZl1es5whjhRjGiQXw2g-11" target="NbWAhhoIf5kSXp0VOlrg-129">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="1730" as="sourcePoint" />
+            <mxPoint x="450" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.532;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.533;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NbWAhhoIf5kSXp0VOlrg-125" target="KZl1es5whjhRjGiQXw2g-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="1730" as="sourcePoint" />
+            <mxPoint x="710" y="1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-18" value="Isolation des données d&#39;obstruction des travaux" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1700" width="210" height="40" as="geometry">
+            <mxRectangle x="290" y="1640" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KZl1es5whjhRjGiQXw2g-18" target="KZl1es5whjhRjGiQXw2g-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="607.0999999999999" y="1790.02" as="sourcePoint" />
+            <mxPoint x="440" y="1760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-21" value="Validation des données" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="615" y="1910" width="210" height="110" as="geometry">
+            <mxRectangle x="290" y="1640" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-22" value="- Boucle de validation pour vérifier que la donnée est conforme et éviter les doublons" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="KZl1es5whjhRjGiQXw2g-21">
+          <mxGeometry y="40" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.524;exitY=1.071;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KZl1es5whjhRjGiQXw2g-22" target="KZl1es5whjhRjGiQXw2g-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="1930" as="sourcePoint" />
+            <mxPoint x="450" y="1880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-24" value="Fichier en sortie:&lt;div&gt;- Table de travaux en cours et passé&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="580" y="2250" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KZl1es5whjhRjGiQXw2g-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.148;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KZl1es5whjhRjGiQXw2g-24" target="KZl1es5whjhRjGiQXw2g-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="2110" as="sourcePoint" />
+            <mxPoint x="500" y="2060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="qxtTbBPjRUaCkIO_WN2R" name="Page-2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
