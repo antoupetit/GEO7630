@@ -1,4 +1,5 @@
-# GEO7630
+# GEO7630 - TP2
+## par Bryan Mayhew et Anthony Julien
 ![](https://lh7-us.googleusercontent.com/xXpwCLySEdBjTJXbrnWDmOb1Cu4IO2V5FDDSVnd-8YPCiWZpn5dweBmT0QSpubJ4ae1xjJjOyb9OGrbXkUcSIv-1jWBTPqOI9mXgtAYaEPrCA0bMM8z36MZdw-hRKb3T9O06ElZp0HcRWSHCigJS8VI)
 
 Le fichier de réseau cyclable est coupé en tronçon d’une longueur maximale de 75m. On rajoute ensuite des valeurs d’indice de qualité d’usage en fonction des champs qui nous intéressent. On extrait ensuite les coordonnées de debut et de fin de chaque segment. On crée finalement un fichier de points pour l’extrémité de début et un autre fichier pour l’extrémité de fin, sur lesquels on viendra apposer les élévations des rasters afin de calculer les pentes. 
